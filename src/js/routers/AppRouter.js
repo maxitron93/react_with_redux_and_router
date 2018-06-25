@@ -5,6 +5,7 @@ import { ConnectedHome } from '../components/Home'
 import { ConnectedCount } from '../components/Count'
 import { ConnectedPeople } from '../components/People'
 import { ConnectedAnimals } from '../components/Animals'
+import { NotFoundPage } from '../components/NotFoundPage'
 
 const AppRouter = (props) => {
   return (
@@ -20,12 +21,13 @@ const AppRouter = (props) => {
         </ul>
 
         <hr/>
-
+x
         <Switch>
           <Route exact path="/" component={ConnectedHome} />
-          <Route path="/count" component={ConnectedCount} />
-          <Route path="/people" component={ConnectedPeople} />
-          <Route path="/animals" component={ConnectedAnimals} />
+          <Route exact path="/count" component={ConnectedCount} />
+          <Route exact path="/people" component={ConnectedPeople} />
+          <Route exact path="/animals" component={ConnectedAnimals} />
+          <Route component={NotFoundPage} />
         </Switch>
       </div>
     </BrowserRouter>
