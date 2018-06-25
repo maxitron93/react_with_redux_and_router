@@ -21,7 +21,7 @@ const AppRouter = (props) => {
         </ul>
 
         <hr/>
-x
+
         <Switch>
           <Route exact path="/" component={ConnectedHome} />
           <Route exact path="/count" component={ConnectedCount} />
