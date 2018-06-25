@@ -1,0 +1,4 @@
+node_modules
+/dist/assets
+/dist/js
+/dist/index.html
